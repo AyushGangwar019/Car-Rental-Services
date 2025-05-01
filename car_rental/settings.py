@@ -11,7 +11,8 @@ AUTH_USER_MODEL = 'app.User'
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['car-rental-services-tje8.onrender.com', 'localhost', '127.0.0.1']
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -81,3 +82,5 @@ EMAIL_HOST_PASSWORD = 'gmta fjtp vbuo bhhq'
 
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
